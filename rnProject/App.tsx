@@ -1,12 +1,13 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+// import Greeting from './components/Greeting';
+import Box from './components/Box';
 
-const App = (): React.JSX.Element => {
+const App = () => {
+  // const name: string = 'JSX';
   return (
     <SafeAreaView>
-      <View>
-        <Text>Hello React!</Text>
-      </View>
+      <Box rounded={true} size="large" color="blue" />
     </SafeAreaView>
   );
 };
